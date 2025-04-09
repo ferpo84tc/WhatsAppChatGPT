@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e5ddd5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.chat-header {
+    background-color: #075e54;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background: url('https://i.imgur.com/5e5e5e5.png');
+    background-size: cover;
+}
+
+.message {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message.user {
+    align-items: flex-end;
+}
+
+.message.bot {
+    align-items: flex-start;
+}
+
+.message-content {
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.message.user .message-content {
+    background-color: #dcf8c6;
+}
+
+.message.bot .message-content {
+    background-color: #ffffff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.chat-input {
+    display: flex;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 10px;
+    outline: none;
+}
+
+.chat-input button {
+    padding: 10px 20px;
+    background-color: #075e54;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
